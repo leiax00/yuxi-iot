@@ -13,7 +13,7 @@ async def lifespan(main: FastAPI):
     AppMgr.init()
     yield
     # 关闭时释放资源
-    AppMgr.release()
+    await AppMgr.release()
 
 app = FastAPI(lifespan=lifespan)
 
