@@ -7,7 +7,7 @@ import time
 # 全局变量，用于保存摄像头帧
 global_frame = None
 # 用于保存录像的输出文件
-output_file = 'output_video.mp4'
+output_file = 'tmp/output_video.mp4'
 
 def capture_camera():
     global global_frame
