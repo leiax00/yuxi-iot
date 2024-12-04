@@ -4,7 +4,7 @@ from typing import TypeVar, Generic, Optional
 
 from pydantic import BaseModel
 
-from common import constants
+from server.common import constants
 
 T = TypeVar('T')
 

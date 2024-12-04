@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from routes import cam
+from server.routes import cam
 
 
 def register_to(app: FastAPI):

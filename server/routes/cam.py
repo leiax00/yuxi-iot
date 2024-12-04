@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 from starlette.responses import StreamingResponse
 
-from common.entity.schema.resp import R1
-from internal.cam.cam_mgr import mgr
+from server.common.entity.schema.resp import R1
+from server.internal.cam.cam_mgr import mgr
 
 router = APIRouter(prefix='/cam', tags=['cam'])
 

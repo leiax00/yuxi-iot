@@ -1,4 +1,4 @@
-venv
+server/venv
 *.iml
 .idea
 tmp
