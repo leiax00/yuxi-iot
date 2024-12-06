@@ -2,3 +2,5 @@ server/venv
 *.iml
 .idea
 tmp
+
+.vscode

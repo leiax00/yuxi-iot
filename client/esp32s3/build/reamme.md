@@ -5,9 +5,11 @@ microPython官方文档: [https://micropython.org/download/ESP32_GENERIC_S3/](ht
 串口驱动下载: [https://www.wch.cn/downloads/CH343SER_EXE.html](https://www.wch.cn/downloads/CH343SER_EXE.html)
 
 ## esptool
+
 esptool官方地址: [https://github.com/espressif/esptool](https://github.com/espressif/esptool)
 
 ### 烧录方式
+
 1. 复制 `esptool.py` 到 [esptool.py](esptool_starter/esptool.py)
 2. 复制固件到 [sources](resources) 目录下, 例如: ESP32_GENERIC_S3-20241025-v1.24.0.bin
 3. 安装依赖: `pip install -r requirements.txt`
