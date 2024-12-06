@@ -14,9 +14,16 @@ esptool官方地址: [https://github.com/espressif/esptool](https://github.com/e
 4. 擦除原有固件
     ```bash
     # 注意修改串口号 COM8
-    python -m esptool --chip esp32s3 --port COM8 erase_flash
+    python -m esptool --chip esp32s3 --port COM3 erase_flash
     ```
 5. 烧录固件
     ```bash
-   python -m esptool --chip esp32s3 --port COM8 write_flash -z 0x0000 resources/ESP32_GENERIC_S3-20241025-v1.24.0.bin
+   python -m esptool --chip esp32s3 --port COM3 write_flash -z 0x0000 resources/ESP32-S3-N16R8-MPY-V1.1.bin
     ```
+
+### 固件说明
+
+| 固件                                                                                         | 说明                             |
+|--------------------------------------------------------------------------------------------|--------------------------------|
+| [ESP32-S3-N16R8-MPY-V1.1.bin](resources%2FESP32-S3-N16R8-MPY-V1.1.bin)                     | microPython_v1.19.1, 开启了psram  |
+| [ESP32_GENERIC_S3-20241025-v1.24.0.bin](resources%2FESP32_GENERIC_S3-20241025-v1.24.0.bin) | microPython_v1.24.0, 未开启了psram |
