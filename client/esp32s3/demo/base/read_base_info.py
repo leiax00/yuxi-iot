@@ -29,4 +29,4 @@ print('\nMem Info: ')
 micropython.mem_info()
 
 # 输出闪存信息
-print(f"\nFlash Info: {esp.flash_size() / 1024 / 1024}")
+print(f"\nFlash Info: {esp.flash_size() / 1024 / 1024}Mb")
