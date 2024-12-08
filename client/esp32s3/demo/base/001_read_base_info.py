@@ -21,7 +21,7 @@ total_fs = fs_stat[0] * fs_stat[2]
 free_fs = fs_stat[0] * fs_stat[3]
 
 print(f"Heap Memory - Free: {free_heap} bytes, Allocated: {alloc_heap} bytes, Total: {total_heap} bytes")
-print(f"Filesystem - Total: {total_fs} bytes, Free: {free_fs} bytes")
+print(f"Filesystem - Total: {total_fs/1024/1024} Mb, Free: {free_fs/1024/1024} Mb")
 
 
 # 输出内存信息
