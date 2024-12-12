@@ -8,4 +8,7 @@
 #webrepl.start()
 
 from yuxi.base.d004_wifi import wifiOp
-wifiOp.with_p("leiax00-24g", "lax4832.").connect()
+wifiOp.try_connect([
+    ("leiax00-24g", "lax4832."),
+    ("uu_exp", "lax4832.")
+])
